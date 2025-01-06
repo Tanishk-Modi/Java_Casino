@@ -1,5 +1,3 @@
 public interface Game {
-
-    void playGame();
-
+    void play(Player player);
 }

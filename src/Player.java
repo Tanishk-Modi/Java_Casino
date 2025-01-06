@@ -1,17 +1,27 @@
 public class Player {
 
-    double balance;
+    private int balance;
 
-    public Player(){
-        this.balance = 100.00;
+    public Player(int startingBalance) {
+        this.balance = startingBalance;
     }
 
-    public Player(double balance){
-        this.balance = balance;
-    }
-
-    public double getBalance(){
+    public int getBalance() {
         return balance;
     }
 
+    public void addBalance(int amount) {
+        balance += amount;
+        System.out.println("You won $" + amount + "!\nNew balance: $" + balance);
+    }
+
+    public void subtractBalance(int amount) {
+        balance -= amount;
+    }
+
+    public boolean isBankrupt() {
+        return balance <= 0;
+    }
+
 }
+
