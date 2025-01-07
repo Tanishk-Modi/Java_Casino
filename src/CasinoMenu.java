@@ -13,6 +13,7 @@ public class CasinoMenu {
     public void showMenu() {
         while (true) {
             System.out.println("\n🎰 Welcome to the Java Casino 🎰");
+            System.out.println("********************************");
             System.out.println("1. Play Slots");
             System.out.println("2. Play War");
             System.out.println("3. Play Roulette");

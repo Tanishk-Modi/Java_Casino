@@ -20,18 +20,28 @@ public class Slots implements Game{
 
             System.out.println("Current Balance: $" + player.getBalance());
             System.out.print("Place your bet amount ($): ");
+            while (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a valid integer:");
+                scanner.next();
+            }
             bet = scanner.nextInt();
             scanner.nextLine();
 
-            if (bet >= player.getBalance()){
-                System.out.println("LIMIT EXCEEDED");
-                break;
+            if (bet > player.getBalance()) {
+                System.out.println("Your bet exceeds your balance! Please enter a valid amount.");
+                continue;
             }
 
             player.subtractBalance(bet);
             System.out.println("Current balance: $" + player.getBalance());
 
             System.out.println("SPINNING . . .  ");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                System.out.println("The spin was interrupted!");
+            }
             row = spinRow();
             printRow(row);
             payout = getPayout(row, bet);
@@ -57,7 +67,7 @@ public class Slots implements Game{
 
     static String[] spinRow(){
 
-        String[] symbols = {"🍒", "🍉", "🍋", "🔔", "⭐️"};
+        String[] symbols = {"🍒", "🍒", "🍒", "🍉", "🍉", "🍋", "🍋", "🔔", "🔔", "⭐️"};
         String [] row = new String[3];
         Random random = new Random();
 
