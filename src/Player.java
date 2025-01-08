@@ -17,6 +17,7 @@ public class Player {
 
     public void subtractBalance(int amount) {
         balance -= amount;
+        System.out.println("You lost $" + amount + "...\nNew balance: $" + balance);
     }
 
     public boolean isBankrupt() {

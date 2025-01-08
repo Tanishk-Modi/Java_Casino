@@ -57,6 +57,7 @@ public class Slots implements Game{
             playAgain = scanner.nextLine().toUpperCase();
 
             if (!playAgain.equals("Y")){
+                System.out.println("Thanks for playing Java Slots!");
                 break;
             }
         }
