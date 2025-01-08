@@ -20,6 +20,8 @@ public class Roulette implements Game{
 
             System.out.println("Choose bet type: (1) for color [Red, Black], (2) for number [1-36]");
 
+            int choice = scanner.nextInt();
+
 
             System.out.print("Do you want to play again (Y/N):  ");
             playAgain = scanner.nextLine().toUpperCase();
