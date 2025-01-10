@@ -13,6 +13,7 @@ public class Casino {
 
         CasinoMenu menu = new CasinoMenu(player, scanner);
         menu.showMenu();
+
         scanner.close();
 
     }

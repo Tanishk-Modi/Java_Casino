@@ -20,10 +20,12 @@ public class Slots implements Game{
 
             System.out.println("Current Balance: $" + player.getBalance());
             System.out.print("Place your bet amount ($): ");
+
             while (!scanner.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a valid integer:");
                 scanner.next();
             }
+
             bet = scanner.nextInt();
             scanner.nextLine();
 
@@ -42,6 +44,7 @@ public class Slots implements Game{
                 Thread.currentThread().interrupt();
                 System.out.println("The spin was interrupted!");
             }
+
             row = spinRow();
             printRow(row);
             payout = getPayout(row, bet);

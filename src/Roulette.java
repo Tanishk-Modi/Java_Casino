@@ -9,9 +9,9 @@ public class Roulette implements Game{
         Random random = new Random();
         String playAgain;
 
-        System.out.println("***********************");
+        System.out.println("********************************");
         System.out.println("♦️♠️Welcome to Java Roulette!♦️♠️");
-        System.out.println("***********************");
+        System.out.println("********************************");
 
         while (!player.isBankrupt()){
 
@@ -89,14 +89,10 @@ public class Roulette implements Game{
             }
 
             if (payout > 0) {
-                System.out.printf("Congratulations! You won $%d!\n", payout);
                 player.addBalance(payout);
             } else {
-                System.out.println("Sorry, you lost this round...");
                 player.subtractBalance(betAmount);
             }
-
-            System.out.printf("Your current balance: $%d\n", player.getBalance());
 
             System.out.print("Do you want to play again (Y/N):  ");
             playAgain = scanner.nextLine().toUpperCase();
