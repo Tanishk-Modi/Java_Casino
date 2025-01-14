@@ -1,3 +1,5 @@
+import utils.Card;
+
 public class Player {
 
     private int balance;
@@ -23,6 +25,7 @@ public class Player {
     public boolean isBankrupt() {
         return balance <= 0;
     }
+
 
 }
 

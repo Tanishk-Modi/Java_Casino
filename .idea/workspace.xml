@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a89fd531-7d7c-4fab-b7d9-51a27bf5ac3d" name="Changes" comment="added functionality for roulette class, added features for war game">
+    <list default="true" id="a89fd531-7d7c-4fab-b7d9-51a27bf5ac3d" name="Changes" comment="fixed formatting issues and redundancy in roulette class">
+      <change afterPath="$PROJECT_DIR$/src/Blackjack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BlackjackUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Casino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roulette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Roulette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Slots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Slots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CasinoMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CasinoMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736355416719</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed formatting issues and redundancy in roulette class">
+      <option name="closed" value="true" />
+      <created>1736525761620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736525761620</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +177,7 @@
     <MESSAGE value="added functionality and comments" />
     <MESSAGE value="thread.sleep in slots, added randomization" />
     <MESSAGE value="added functionality for roulette class, added features for war game" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality for roulette class, added features for war game" />
+    <MESSAGE value="fixed formatting issues and redundancy in roulette class" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed formatting issues and redundancy in roulette class" />
   </component>
 </project>

@@ -17,8 +17,9 @@ public class CasinoMenu {
             System.out.println("1. Play Slots");
             System.out.println("2. Play War");
             System.out.println("3. Play Roulette");
-            System.out.println("4. Check Balance");
-            System.out.println("5. Exit\n");
+            System.out.println("4. Play Blackjack");
+            System.out.println("5. Check Balance");
+            System.out.println("6. Exit\n");
             System.out.print("Choose an option: ");
 
             int choice = getUserChoice();
@@ -33,9 +34,12 @@ public class CasinoMenu {
                     playGame(new Roulette());
                     break;
                 case 4:
-                    System.out.println("Your current balance is: $" + player.getBalance());
+                    playGame(new Blackjack());
                     break;
                 case 5:
+                    System.out.println("Your current balance is: $" + player.getBalance());
+                    break;
+                case 6:
                     System.out.println("Thank you for visiting the Java Casino. Goodbye!");
                     return;
                 default:
