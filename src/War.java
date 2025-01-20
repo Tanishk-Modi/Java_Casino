@@ -46,10 +46,8 @@ public class War implements Game{
 
             int comparison = playerCard.compareTo(computerCard);
             if (comparison > 0) {
-                System.out.println("You win this round!");
                 player.addBalance(bet);
             } else if (comparison < 0) {
-                System.out.println("You lose this round!");
                 player.subtractBalance(bet);
             } else {
                 System.out.println("It's a tie! Your bet is refunded.");

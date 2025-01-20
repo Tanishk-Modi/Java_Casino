@@ -14,12 +14,12 @@ public class Player {
 
     public void addBalance(int amount) {
         balance += amount;
-        System.out.println("You won $" + amount + "!\nNew balance: $" + balance);
+        System.out.println("You won $" + amount + "!\nNew balance: $" + getBalance());
     }
 
     public void subtractBalance(int amount) {
         balance -= amount;
-        System.out.println("You lost $" + amount + "...\nNew balance: $" + balance);
+        System.out.println("You lost $" + amount + "...\nNew balance: $" + getBalance());
     }
 
     public boolean isBankrupt() {

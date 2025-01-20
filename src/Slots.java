@@ -34,9 +34,6 @@ public class Slots implements Game{
                 continue;
             }
 
-            player.subtractBalance(bet);
-            System.out.println("Current balance: $" + player.getBalance());
-
             System.out.println("SPINNING . . .  ");
             try {
                 Thread.sleep(2000);
@@ -52,8 +49,7 @@ public class Slots implements Game{
             if (payout > 0){
                 player.addBalance(payout);
             } else {
-                System.out.println("Sorry, you lost this round...");
-                System.out.println("Current balance: $" + player.getBalance());
+                player.subtractBalance(bet);
             }
 
             System.out.print("Do you want to play again (Y/N):  ");
